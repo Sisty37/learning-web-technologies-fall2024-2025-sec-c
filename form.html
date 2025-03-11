@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form Table</title>  
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="video.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="table.html">Table</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Become a Member - Please Fill Out the Form</h2>
+            <form>
+                <table border="1" cellpadding="8" cellspacing="0">
+                    <tr>
+                        <td><label for="first-name">First Name:</label></td>
+                        <td><input id="first-name" type="text" placeholder="First Name"></td>
+                    
+
+                    <tr>
+                        <td><label for="last-name">Last Name:</label></td>
+                        <td><input id="last-name" type="text" placeholder="Last Name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="id">Your ID:</label></td>
+                        <td><input id="id" type="text" placeholder="Enter your ID"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Your Email:</label></td>
+                        <td><input id="email" type="email" placeholder="Your email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password:</label></td>
+                        <td><input type="password" id="password" placeholder="Your Password"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="repeat-password">Repeat Password:</label></td>
+                        <td><input type="password" id="repeat-password" placeholder="Repeat Your Password"></td>
+                    </tr>
+                    <tr>
+                        <td>Your Gender:</td>
+                        <td>
+                            <input type="radio" name="gender" value="male"> Male
+                            <input type="radio" name="gender" value="female"> Female
+                            <input type="radio" name="gender" value="other"> Other
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Your Skills:</td>
+                        <td>
+                            <input type="checkbox" name="skills" value="html"> HTML
+                            <input type="checkbox" name="skills" value="css"> CSS
+                            <input type="checkbox" name="skills" value="javascript"> JavaScript
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="address">Address:</label></td>
+                        <td><textarea id="address" name="address" rows="4" cols="30" placeholder="Enter your address here..."></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="department">Select Your Department:</label></td>
+                        <td>
+                            <select id="department" name="department">
+                                <option value="CSE">CSE</option>
+                                <option value="EEE">EEE</option>
+                                <option value="IPE">IPE</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="dob">Date of Birth:</label></td>
+                        <td><input type="date" id="dob" name="dob"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="image">Upload Image:</label></td>
+                        <td><input type="file" id="image" name="image" accept="image/*"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <input type="reset" value="Reset">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <input type="submit" value="Submit">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+    </main>
+    
+    <footer></footer>
+</body>
+</html>
