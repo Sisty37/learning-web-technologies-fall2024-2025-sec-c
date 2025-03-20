@@ -79,13 +79,15 @@ label {
 
 /* Input fields */
 input {
-    width: 90%; /* Reducing the width to make it more centered */
-    padding: 8px;
-    margin: 5px 0 15px;
+    width: 80%; /* Adjust width to make it look balanced */
+    padding: 10px;
+    margin: 10px auto; /* Centers the input field */
     border: 1px solid #ccc;
     border-radius: 4px;
-    text-align: center; /* Center text inside the input fields */
+    text-align: center; /* Centers text inside the input */
+    display: block; /* Ensures it takes full width within the form */
 }
+
 
 /* Button Styling */
 /* Button Styling */

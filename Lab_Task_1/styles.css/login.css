@@ -57,13 +57,36 @@ label {
 input {
     width: 100%;
     padding: 8px;
-    margin: 5px 0 15px;
+    margin: 5px 0 1px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
+.fpassword {
+    font-size: 12px; /* Adjust font size */
+    margin: 10px 5px ;
+    color: blue; /* Optional: Change color */
+    cursor: pointer; /* Makes it look clickable */
+    text-decoration: none;
+}
+
+.fpassword > a{
+    text-decoration: none;
+}
+
 /* Button Styling */
 button {
+    text-decoration: none;
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 4px;
+}
+button {
+    text-decoration: none;
     background-color: #e74c3c;
     color: white;
     padding: 10px;

@@ -25,3 +25,7 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
+
+button > a{
+    text-decoration: none;
+}
