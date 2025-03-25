@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Date of Birth Validation</title>
+    <script>
+        function validateDOB() {
+            var day = document.getElementById("day").value;
+            var month = document.getElementById("month").value;
+            var year = document.getElementById("year").value;
+            
+            if (!day || !month || !year) {
+                alert("Date of Birth cannot be empty.");
+                return false;
+            }
+            
+            var dayNum = parseInt(day);
+            var monthNum = parseInt(month);
+            var yearNum = parseInt(year);
+            
+            if (dayNum < 1 || dayNum > 31 || monthNum < 1 || monthNum > 12 || yearNum < 1900 || yearNum > 2025) {
+                alert("Invalid Date! Please enter a valid date.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <fieldset>
+        <legend>Date of Birth</legend>
+        <form onsubmit="return validateDOB()">
+           <input type="text" id="day" placeholder="dd" size="2"> /
+           <input type="text" id="month" placeholder="mm" size="2"> /
+           <input type="text" id="year" placeholder="yyyy" size="4">
+           <hr>
+           <button type="submit">Submit</button>
+        </form>
+    </fieldset>
+   
+</body>
+</html>
